@@ -1,0 +1,51 @@
+body {
+    background-image: url('STARS.avif'); /* Replace 'background-image.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Set text color to white */
+}
+title{
+    color:white;
+}
+
+.form-control {
+    border: 1px solid #E0E6EB;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.03), 0px 3px 6px rgba(18, 42, 66, 0.02);
+    color: white; /* Set text color to white */
+    background-color: transparent; /* Make input background transparent */
+}
+
+.form-control:hover {
+    color: var(--colorHover); /* Use CSS variable for hover color */
+}
+
+.form-control--invalid {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07), 0 0 0 2px var(--colorDanger); /* Use CSS variable for danger color */
+}
+
+
+#header {
+    font-size: 9vh;
+    color:whitesmoke;
+    text-align: left;
+    font-family: 'Star Jedi', sans-serif; /* Use Star Wars font */
+}
+
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('star-wars-font.ttf') format('truetype'); /* Replace 'star-wars-font.ttf' with the path to your font file */
+}
+/* Glitter animation */
+@keyframes glitter {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+#header:active {
+    animation: glitter 0.5s ease-out; /* Apply glitter animation on click */
+}
+label {
+    color: white;
+}
+

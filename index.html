@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Gateway</title>
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div id="header">
+            PayGram.com
+            </div>
+      <div class="container">
+       
+        <form>
+          <div class="form-group">
+            <label for="payment_method">Payment Method</label>
+            <select class="form-control" id="payment_method">
+              <option value="credit_card">Credit Card</option>
+              <option value="debit_card">Debit Card</option>
+              <option value="paypal">PayPal</option>
+              <!-- Add more payment methods as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="card_number">Card Number</label>
+            <input type="text" class="form-control" id="card_number" placeholder="Enter card number" pattern="\d{4} \d{4} \d{4} \d{4}" required>
+            <small class="form-text text-muted">Format: xxxx xxxx xxxx xxxx</small>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <label for="expiry_date">Expiry Date</label>
+              <input type="text" class="form-control" id="expiry_date" placeholder="MM/YYYY" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" required>
+              <small class="form-text text-muted">Format: MM/YYYY</small>
+            </div>
+            <div class="col">
+              <label for="cvv">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="CVV" pattern="[0-9]{3,4}" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="text" class="form-control" id="amount" placeholder="Enter amount" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Pay Now</button>
+        </form>
+      </div>
+      
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
